@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 4ff5f6a15bb8f89c07b396a81b825a4efaaecd29
+  revision: a0a62da235e8d87795d6cef6613ddf440386b366
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -94,14 +94,14 @@ GIT
 
 GIT
   remote: git://github.com/rails/turbolinks.git
-  revision: 37e097d24763106a7a3f06c5ec0b6242cff18ea2
+  revision: dd31f4b2996f2300631f89339ada82c65b95f4c2
   specs:
     turbolinks (3.0.0)
       coffee-rails
 
 GIT
   remote: git://github.com/rspec/rspec-core.git
-  revision: fcf21e6284d755398401aacdaadaf6cdff145658
+  revision: 427e7651746a67a38bb49a1cd89fe53e9ecdfc9d
   specs:
     rspec-core (3.5.0.pre)
       rspec-support (= 3.5.0.pre)
@@ -116,7 +116,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-mocks.git
-  revision: b94e242ebbc51081fc2245e37c574f5d6d02b7f8
+  revision: 29269d483f39ce78f3614a16b2e00a2a496a482c
   specs:
     rspec-mocks (3.5.0.pre)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -137,7 +137,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-support.git
-  revision: 4a7a7e698861884f603199f03c74f45a7abc99f7
+  revision: 885e37c525b68ccca8351fe648a7826f34630318
   specs:
     rspec-support (3.5.0.pre)
 
@@ -424,7 +424,7 @@ GEM
     logger-colors (1.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    lumberjack (1.0.9)
+    lumberjack (1.0.10)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     memcachier (0.0.2)
