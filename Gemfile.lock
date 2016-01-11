@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: efa445c7b5fe17b4f1a2aeb6ad5dcac464dbe9d6
+  revision: ddfd51f270a9d915c64e83f73390c8642de44e23
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -115,7 +115,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-mocks.git
-  revision: 7369e6b949585114bc1e9f20885d64a65f95cc31
+  revision: eae0606af439f81db374e824fa57a51daccc0985
   specs:
     rspec-mocks (3.5.0.pre)
       diff-lcs (>= 1.2.0, < 2.0)
