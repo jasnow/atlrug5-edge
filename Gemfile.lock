@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: f5ab4055b909e7b325304c5a7e414c28bbe441b7
+  revision: 24ad8c058cae81874569da679df4d074694578c2
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -309,9 +309,10 @@ GEM
     docile (1.1.5)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.0.1)
-    dotenv-rails (2.0.1)
-      dotenv (= 2.0.1)
+    dotenv (2.1.0)
+    dotenv-rails (2.1.0)
+      dotenv (= 2.1.0)
+      railties (>= 4.0, < 5.1)
     em-hiredis (0.3.0)
       eventmachine (~> 1.0)
       hiredis (~> 0.5.0)
@@ -325,7 +326,7 @@ GEM
     erubis (2.7.0)
     ethon (0.8.1)
       ffi (>= 1.3.0)
-    eventmachine (1.0.9)
+    eventmachine (1.0.9.1)
     execjs (2.6.0)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
