@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jnicklas/capybara.git
-  revision: 4b3093f4bd12a682b41d8e88d3958d33e70f4662
+  revision: 710bc5dca9089438fe0109a5c76ae0538d2d1fd6
   branch: master
   specs:
     capybara (2.6.0.dev)
@@ -12,9 +12,9 @@ GIT
 
 GIT
   remote: git://github.com/josevalim/rails-footnotes.git
-  revision: 02f6d16833b2c1a68c2cd94c5bdb8c4257e06d37
+  revision: a179ce09073a78d9ea653ed779cdf0b4c50ccfb1
   specs:
-    rails-footnotes (4.1.7)
+    rails-footnotes (4.1.8)
       rails (>= 3.2)
 
 GIT
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 24ad8c058cae81874569da679df4d074694578c2
+  revision: b2874aec105c277b6008cb8d73ffd106a12b444b
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-rails.git
-  revision: b2ac99c4202245598f3a15f14aa22ae3cd1b66b7
+  revision: d108631c9c19bf28e3bc6c474fa4e702731bfe55
   specs:
     rspec-rails (3.5.0.pre)
       actionpack (>= 3.0)
@@ -162,7 +162,7 @@ GEM
     addressable (2.3.8)
     arel (7.0.0)
     ast (2.2.0)
-    autoprefixer-rails (6.2.3)
+    autoprefixer-rails (6.3.1)
       execjs
       json
     autotest-fsevent (0.2.11)
