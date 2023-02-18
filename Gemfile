@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails',           github: 'rails/rails'
-gem 'turbolinks',      github: 'rails/turbolinks'
-gem 'rails-footnotes', github: 'josevalim/rails-footnotes'
-gem 'simple_form',     github: 'plataformatec/simple_form'
-gem "omniauth",        github: 'twalpole/omniauth', branch: 'rack_master'
-gem 'capybara',        github: 'jnicklas/capybara', branch: 'master'
+gem "rails", git: "https://github.com/rails/rails", branch: "main"
 
-ruby '2.3.0'
+gem 'turbolinks'
+#HID: gem 'rails-footnotes'
+gem 'simple_form'
+gem "omniauth"
+gem 'capybara'
+
+ruby '3.2.1'
 
 gem 'omniauth-github'
 gem 'octokit'
@@ -15,7 +16,7 @@ gem 'coffee-rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'execjs'
-gem 'therubyracer', platforms: :ruby
+gem 'mini_racer'
 gem 'bootstrap-sass'
 
 gem 'haml'
@@ -27,12 +28,12 @@ gem 'overcommit'
 gem 'jbuilder'
 
 # APP-specific gems
-gem 'rest-client', '2.0.0.rc2'
+gem 'rest-client'
 gem 'hassle3'
 gem 'kgio'
 gem 'tzinfo'
 gem 'unicorn'
-gem 'backports'
+#HID: gem 'backports'
 gem 'memcachier'
 gem 'dalli'
 gem 'yt'
@@ -45,7 +46,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'awesome_print'
-  gem 'quiet_assets'
 
   gem 'dawnscanner', require: false
 
@@ -66,25 +66,25 @@ group :development, :test do
 
   # TESTING/ANALYSIS
   # Rails 5
-  gem 'rspec-rails'       , github: 'rspec/rspec-rails'
-  gem 'rspec-core'        , github: 'rspec/rspec-core'
-  gem 'rspec-expectations', github: 'rspec/rspec-expectations'
-  gem 'rspec-mocks'       , github: 'rspec/rspec-mocks'
-  gem 'rspec-support'     , github: 'rspec/rspec-support'
+  gem 'rspec-rails'
+  gem 'rspec-core'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'rspec-support'
 
   gem 'email_spec'
 
   gem 'capybara-screenshot'
 
-  gem 'autotest-rails'
-  gem 'autotest-fsevent'
-  gem 'autotest-growl'
+#HID:  gem 'autotest-rails'
+#HID:  gem 'autotest-fsevent'
+#HID:  gem 'autotest-growl'
 
   gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
 
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'launchy'
   gem 'letter_opener'
   gem 'zonebie'
@@ -101,6 +101,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+#HID:  gem 'pg'
   gem 'rails_12factor'
 end

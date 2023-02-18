@@ -1,4 +1,4 @@
-class AddEmailTwitterAndDescriptionToTalks < ActiveRecord::Migration
+class AddEmailTwitterAndDescriptionToTalks < ActiveRecord::Migration[5.0]
   def change
     add_column :talks, :email, :string
     add_column :talks, :twitter, :string
