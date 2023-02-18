@@ -120,6 +120,9 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     builder (3.2.4)
+    bundler-audit (0.9.1)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -382,6 +385,8 @@ GEM
       rexml (~> 3.2)
     parser (3.2.1.0)
       ast (~> 2.4.1)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
     path_expander (1.1.1)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -451,6 +456,8 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.12.0)
+    ruby_audit (2.2.0)
+      bundler-audit (~> 0.9.0)
     ruby_gntp (0.3.4)
     ruby_parser (3.19.2)
       sexp_processor (~> 4.16)
@@ -492,9 +499,24 @@ GEM
       json
       simplecov
     simplecov_json_formatter (0.1.4)
+    slim (5.0.0)
+      temple (~> 0.10.0)
+      tilt (>= 2.0.6, < 2.1)
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
+    spektr (0.4.0)
+      erubi
+      haml
+      parser (>= 2.6.0)
+      pastel
+      ruby_parser (>= 3.0)
+      slim
+      tty-color
+      tty-option
+      tty-spinner
+      tty-table
+      zeitwerk (>= 2.6)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -504,6 +526,11 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.6.0-x86_64-darwin)
     sqlite3 (1.6.0-x86_64-linux)
+    strings (0.2.1)
+      strings-ansi (~> 0.2)
+      unicode-display_width (>= 1.5, < 3.0)
+      unicode_utils (~> 1.4)
+    strings-ansi (0.2.0)
     sys-uname (1.2.2)
       ffi (~> 1.1)
     temple (0.10.0)
@@ -511,7 +538,7 @@ GEM
       unicode-display_width (>= 1.1.1, < 3)
     thor (1.2.1)
     thread_safe (0.3.6)
-    tilt (2.1.0)
+    tilt (2.0.11)
     timeout (0.3.2)
     travis (1.8.13)
       backports
@@ -522,6 +549,16 @@ GEM
       launchy (~> 2.1)
       pusher-client (~> 0.4)
       typhoeus (~> 0.6, >= 0.6.8)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-option (0.2.0)
+    tty-screen (0.8.1)
+    tty-spinner (0.9.3)
+      tty-cursor (~> 0.7)
+    tty-table (0.12.0)
+      pastel (~> 0.8)
+      strings (~> 0.2.0)
+      tty-screen (~> 0.8)
     tty-which (0.4.2)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -536,6 +573,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (2.4.2)
+    unicode_utils (1.4.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -607,12 +645,14 @@ DEPENDENCIES
   rspec-mocks
   rspec-rails
   rspec-support
+  ruby_audit
   ruby_gntp
   rubycritic
   sass-rails
   simple_form
   simplecov
   simplecov-json
+  spektr
   sqlite3
   travis
   turbolinks
